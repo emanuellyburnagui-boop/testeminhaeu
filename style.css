@@ -1,1 +1,176 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
+body{
+font-family: "Poppins", sans-serif;
+}
+
+header{
+background-color: #e47068;
+color: white;
+width: 100%;
+padding: 20px;
+}
+
+.cabecalho-itens{
+max-width: 1980px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cabecalho_imagem {
+  width: 120px;          /* Define a largura da foto */
+  height: 120px;         /* Mantém a altura idêntica para o círculo ficar perfeito */
+  border-radius: 50%;   /* Corta a imagem em formato redondo */
+  object-fit: cover;    /* Evita que a foto fique distorcida ou amassada */
+}
+
+.titulo_site{
+padding: 20px;
+text-align: center;
+width: 100%;
+font-size: 90px;
+}
+
+.sociais{
+display: flex;
+justify-content: flex-end;
+width: 100px;
+padding-right: 25px;
+}
+
+.banner1{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.escola-img {
+  width: 100vw; /* Utiliza 100% da largura visual da tela */
+  height: auto; /* Mantém a proporção da foto sem distorcer */
+  object-fit: cover;
+}
+
+.estudante_titulo{
+padding: 50px;
+text-align: center;
+
+}
+
+
+
+/* Alinha as 3 colunas principais lado a lado */
+.container-secao {
+  display: flex;
+  gap: 24px;            /* Espaçamento horizontal entre as 3 colunas */
+  align-items: center;  /* Centraliza verticalmente as colunas (opcional) */
+  width: 100%;
+}
+
+/* Define que as colunas laterais e a central terão o mesmo tamanho flexível */
+.coluna-estudantes, 
+.coluna-foto-central {
+  flex: 1;              /* Distribui o espaço igualmente (33% para cada) */
+}
+
+/* Organiza os blocos de estudantes um abaixo do outro dentro de suas colunas */
+.coluna-estudantes {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;            /* Espaçamento vertical entre um card de aluno e outro */
+}
+
+/* Força a sua foto a ocupar 100% da largura disponível da coluna dela */
+.minha-foto {
+ / width: 100%;
+  height: auto;         /* Mantém a proporção da foto sem distorcer */
+  display: block;
+  border-radius: 10px;   /* Cantos arredondados *
+}
+
+
+.texto-eu{
+  font-size: 16px;       /* Deixa o texto menor que o título */
+  font-weight: normal;   /* Remove o negrito do texto */
+  line-height: 1.5;      /* Melhora o espaçamento entre as linhas da frase */
+}
+
+
+.estudante-nome{
+font-size: 24px;       /* Deixa o título maior (ajuste o número se quiser) */
+font-weight: bold;     /* Garante que o título continue em negrito */
+margin-bottom: 8px;    /* Cria um espaço entre o título e o texto */
+text-align: center;
+}
+.estudante-imagem{
+width: 120px;
+}
+.estudante-icone{
+width: 38px;
+padding: 4px 8px;
+}
+.estudante{
+background-image: background-color(#faae43);
+padding: 24px 0;
+}
+
+.estudante.div{
+text-align: center;
+padding: 24px 0;
+}
+.estudantes_todos{
+display: flex;
+justify-content: space-around;
+}
+.escola{
+background-image: linear-gradient(#F7CAC9,#FDEBD0);
+color: white;
+display: flex;
+justify-content:center;
+padding: 24px 0;
+text-align:center;
+display:block;
+}
+.escola-titulo{
+padding: 50px;
+text-align: center;
+}
+
+.titulo-video{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fonte*/
+font-size: 20px;
+font-weight: bold;
+color:#333333;
+text-align: center;
+margin-bottom: 15px;
+}
+
+.container-video{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column; /* Empilha o vídeo e o título H3 verticalmente */
+  align-items: center;    /* Centraliza o vídeo e o título horizontalmente */
+  justify-content: center;
+  margin-top: 40px;       /* Cria um espaçamento seguro do texto acima */
+  margin-bottom: 20px;    /* Espaçamento opcional em relação ao fim da página */
+  max-width: 100%;
+}
+
+.logo_rodape{
+  width: 60px;          /* Define a largura da foto */
+  height: 60px;         /* Mantém a altura idêntica para o círculo ficar perfeito */
+  border-radius: 50%;   /* Corta a imagem em formato redondo */
+  object-fit: cover;
+
+}
+
+.link{
+color: #000000;
+text-decoration: none;
+}
