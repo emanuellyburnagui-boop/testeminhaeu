@@ -24,26 +24,55 @@
   position: relative;
 }
 
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 130px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
 }
 
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 </style>
 
-<div class="dropdown">mais sobre mim!
-  <div class="dropdown-content">Livros que já li
-  <div class="dropdown-content">Meus memes do momento
-  <div class="dropdown-content">Personagens favoritos
-
-  </div>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown Menu</button>
+  <div class="dropdown-content">
+    <a href="livros.html">livros que já li</a>
+    <a href="memes.html">Meus memes do momento</a>
+    <a href="personagens.html">Personagens favoritos</a>
   </div>
 </div>
  </header>
