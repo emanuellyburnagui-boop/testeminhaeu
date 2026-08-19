@@ -47,7 +47,8 @@ padding-right: 25px;
 /* menu*/
 .dropdown {
   position: relative;
-  position-try-fallbacks: left, right;
+  right: 0;
+  left: auto;
 }
 
 /* Style the dropdown button */
