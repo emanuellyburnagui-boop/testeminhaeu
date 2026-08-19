@@ -46,7 +46,7 @@ padding-right: 25px;
 
 /* menu*/
 .dropdown {
-  position: absolute;
+  position: relative;
   white-space: normal; /* Permite que o texto quebre em várias linhas */
   word-break: break-word;
 }
