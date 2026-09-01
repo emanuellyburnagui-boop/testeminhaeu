@@ -202,6 +202,56 @@ text-align: center;
 margin-bottom: 15px;
 }
 
+
+/* Container que gerencia a grade inteira */
+.grade-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas iguais */
+  gap: 24px; /* Espaçamento de 24px entre as fotos (tanto horizontal quanto vertical) */
+  max-width: 1000px; /* Largura máxima da grade na tela */
+  margin: 0 auto; /* Centraliza a grade inteira na página */
+  padding: 20px;
+}
+
+/* Bloco individual de cada foto + texto */
+.item-grade {
+  display: flex;
+  flex-direction: column; /* Força o texto a ficar embaixo da imagem */
+  align-items: center; /* Centraliza a imagem e o texto horizontalmente */
+  background-color: #fcfcfc; /* Opcional: um fundo leve para o card */
+  border-radius: 8px; /* Arredonda levemente os cantos do bloco */
+  overflow: hidden;
+}
+
+/* Configurações da imagem */
+.foto-grid {
+  width: 100%; /* Ocupa toda a largura disponível da coluna */
+  height: 200px; /* Define uma altura fixa para que todas fiquem alinhadas */
+  object-fit: cover; /* Corta a imagem proporcionalmente para preencher os 200px sem distorcer */
+  border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+/* Configurações do texto descritivo */
+.legenda-grid {
+  margin-top: 12px; /* Espaço entre a foto e o texto */
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+  text-align: center; /* Centraliza o texto */
+  padding: 0 5px; /* Evita que o texto encoste nas bordas laterais */
+}
+
+/* Responsividade: para telas de celular, transforma a grade em 1 coluna só */
+@media (max-width: 600px) {
+  .grade-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+
+
+
 .container-video{
   width: 100%;
   height: auto;
